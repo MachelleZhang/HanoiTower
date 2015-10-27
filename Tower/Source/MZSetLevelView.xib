@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MZSetLevelView">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="174"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkX-Bt-deF">
+                    <rect key="frame" x="70" y="72" width="30" height="30"/>
+                    <state key="normal" title="3"/>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaW-Bj-TD6">
+                    <rect key="frame" x="102" y="72" width="30" height="30"/>
+                    <state key="normal" title="4"/>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTp-pQ-gdN">
+                    <rect key="frame" x="140" y="72" width="30" height="30"/>
+                    <state key="normal" title="5"/>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-sv-ltf">
+                    <rect key="frame" x="189" y="72" width="30" height="30"/>
+                    <state key="normal" title="6"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egj-7K-vMo">
+                    <rect key="frame" x="256" y="18" width="46" height="30"/>
+                    <state key="normal" title="关闭"/>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BK-NZ-VaP">
+                    <rect key="frame" x="235" y="72" width="30" height="30"/>
+                    <state key="normal" title="7"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeSetView" destination="Egj-7K-vMo" id="zEj-SY-CvX"/>
+                <outlet property="level3" destination="IkX-Bt-deF" id="XeM-IU-TQ0"/>
+                <outlet property="level4" destination="QaW-Bj-TD6" id="C2b-7V-U93"/>
+                <outlet property="level5" destination="mTp-pQ-gdN" id="fhO-aP-ddi"/>
+                <outlet property="level6" destination="dIR-sv-ltf" id="3vo-Ho-uWb"/>
+                <outlet property="level7" destination="3BK-NZ-VaP" id="a1W-ho-RXx"/>
+            </connections>
+            <point key="canvasLocation" x="240" y="297"/>
+        </view>
+    </objects>
+</document>
