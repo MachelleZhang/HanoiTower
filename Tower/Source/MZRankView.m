@@ -2,14 +2,20 @@
 //  MZRankView.m
 //  Tower
 //
-//  Created by boco on 15/10/21.
+//  Created by Zhangle on 15/10/21.
 //  Copyright © 2015年 Machelle. All rights reserved.
 //
+//  排行榜视图类
 
 #import "MZRankView.h"
 
 @implementation MZRankView
 
+/**
+ *  初始化，读出数据显示即可
+ *
+ *  @return self
+ */
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -35,6 +41,9 @@
     return self;
 }
 
+/**
+ *  关闭事件响应
+ */
 - (void)close {
     [self removeFromSuperview];
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
@@ -13,23 +14,40 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEh-P1-JFj">
-                                <rect key="frame" x="259" y="212" width="83" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="BTW-qb-6gP">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produced by Machelle " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEh-P1-JFj">
+                                <rect key="frame" x="153" y="279" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BTW-qb-6gP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8fb-Na-e5n"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="BTW-qb-6gP" secondAttribute="bottom" id="9zE-yj-jd5"/>
+                            <constraint firstItem="BTW-qb-6gP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="FAs-kS-Ewu"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="uEh-P1-JFj" secondAttribute="bottom" constant="20" id="NcP-dp-Pqp"/>
+                            <constraint firstItem="BTW-qb-6gP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ZX7-Cj-kqU"/>
+                            <constraint firstAttribute="trailing" secondItem="BTW-qb-6gP" secondAttribute="trailing" id="bED-o6-qc2"/>
+                            <constraint firstItem="uEh-P1-JFj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lOV-Xc-1Q5"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="6" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch" width="423" height="282"/>
+    </resources>
 </document>
